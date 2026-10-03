@@ -1,0 +1,76 @@
+# =============================================
+# Local CPU Training Config
+# Optimized for local machine (no GPU)
+# =============================================
+
+experiment_name: "local_cpu_run"
+seed: 42
+device: "auto"
+
+environment:
+  num_retailers: 3
+  num_distributors: 2
+  num_suppliers: 1
+  num_periods: 100        # Shorter episodes = faster iteration
+  lead_time_mean: 3
+  lead_time_std: 1
+  holding_cost: 1.0
+  ordering_cost: 50.0
+  shortage_cost: 500.0
+  initial_inventory: 100
+  max_order_quantity: 500
+  demand_source: "synthetic"
+
+disruption:
+  enabled: true
+  demand_spike_prob: 0.02
+  demand_spike_factor: 3.0
+  lead_time_delay_prob: 0.03
+  lead_time_delay_factor: 3.0
+  node_failure_prob: 0.01
+  node_failure_duration: 10
+  cascade_enabled: true
+
+forecasting:
+  model_type: "patchtst"
+  horizon: 7
+  lookback: 30
+  patch_length: 16
+  num_heads: 4
+  d_model: 128
+  num_layers: 3
+  learning_rate: 0.001
+  batch_size: 32
+  max_epochs: 50
+  early_stopping_patience: 5
+
+mappo:
+  hidden_dim: 256
+  num_layers: 2
+  activation: "relu"
+  use_gnn: true
+  gnn_type: "gcn"
+  gnn_hidden_dim: 64
+  gnn_num_layers: 2
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_epsilon: 0.2
+  entropy_coef: 0.01
+  value_loss_coef: 0.5
+  max_grad_norm: 0.5
+  num_epochs: 6          # Fewer inner epochs for speed
+  num_minibatches: 4
+  total_timesteps: 1000000
+  num_workers: 1         # Single threaded for CPU
+  rollout_length: 64     # Shorter rollouts
+
+coordinator:
+  llm_provider: "mock"
+  llm_model: "llama3:8b"
+  temperature: 0.3
+  advisory_enabled: true
+  override_enabled: true
+  override_threshold: 0.8
+  explanation_enabled: true
+  max_tokens: 512

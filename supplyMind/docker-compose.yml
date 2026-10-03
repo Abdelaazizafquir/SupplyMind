@@ -1,0 +1,57 @@
+version: "3.9"
+
+services:
+  # ── FastAPI Backend ─────────────────────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ../../src:/ai_src          # Mount PFE src/ as AI engine
+      - ../../models:/models       # Mount trained models
+      - backend_uploads:/app/uploads
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./supplymind.db
+      - JWT_SECRET=${JWT_SECRET:-change-this-secret}
+      - FRONTEND_URL=http://localhost:3000
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  # ── Next.js Frontend ─────────────────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_PUBLIC_WS_URL=ws://localhost:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # ── Redis (job queue + caching) ───────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  # ── Ollama (local LLM) ────────────────────────────────────────────────────────
+  # Uncomment to run Llama 3 locally for LLM explanations
+  # ollama:
+  #   image: ollama/ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_models:/root/.ollama
+  #   restart: unless-stopped
+
+volumes:
+  backend_uploads:
+  # ollama_models:

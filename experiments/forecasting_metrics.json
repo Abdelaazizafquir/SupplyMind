@@ -1,0 +1,16 @@
+{
+  "patchtst_mae": 83.6692871820359,
+  "patchtst_rmse": 115.64692275807279,
+  "horizon": 28,
+  "num_series": 9,
+  "stores": [
+    "CA_1",
+    "CA_2",
+    "CA_3"
+  ],
+  "departments": [
+    "FOODS_1",
+    "FOODS_2",
+    "FOODS_3"
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "Normal (Baseline)": {
+    "MAPPO+GNN": {
+      "policy": "MAPPO+GNN",
+      "metrics": {
+        "total_cost": {
+          "mean": 295643.59109604545,
+          "std": 28099.58405102905
+        },
+        "holding_cost": {
+          "mean": 231787.80291518196,
+          "std": 2621.275266915735
+        },
+        "ordering_cost": {
+          "mean": 22775.0,
+          "std": 744.0598094239468
+        },
+        "shortage_cost": {
+          "mean": 41080.78818086347,
+          "std": 27570.912698641398
+        },
+        "stockout_rate": {
+          "mean": 0.034999999999999996,
+          "std": 0.01802775637731995
+        },
+        "fill_rate": {
+          "mean": 0.9913915742302952,
+          "std": 0.0057774489214845294
+        },
+        "inventory_turnover": {
+          "mean": 24.709359455852088,
+          "std": 0.28069360901099605
+        },
+        "bullwhip_ratio": {
+          "mean": 182.2271971864424,
+          "std": 5.893149940459748
+        },
+        "avg_inventory": {
+          "mean": 386.31300485863665,
+          "std": 4.36879211152626
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    },
+    "(s,S) Conservative": {
+      "policy": "(s,S) Conservative",
+      "metrics": {
+        "total_cost": {
+          "mean": 200736.00803373926,
+          "std": 63274.96533859932
+        },
+        "holding_cost": {
+          "mean": 67211.46137520907,
+          "std": 2686.175566461038
+        },
+        "ordering_cost": {
+          "mean": 15130.0,
+          "std": 483.83881613611777
+        },
+        "shortage_cost": {
+          "mean": 118394.5466585302,
+          "std": 63822.56537212489
+        },
+        "stockout_rate": {
+          "mean": 0.12000000000000002,
+          "std": 0.05079370039680117
+        },
+        "fill_rate": {
+          "mean": 0.9751905766276764,
+          "std": 0.01337393562215036
+        },
+        "inventory_turnover": {
+          "mean": 85.33446034116919,
+          "std": 3.3000635997484804
+        },
+        "bullwhip_ratio": {
+          "mean": 139.46591804969586,
+          "std": 6.006116779193614
+        },
+        "avg_inventory": {
+          "mean": 112.01910229201508,
+          "std": 4.476959277435066
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    },
+    "Base-Stock 400": {
+      "policy": "Base-Stock 400",
+      "metrics": {
+        "total_cost": {
+          "mean": 143695.22948005304,
+          "std": 24043.512037773464
+        },
+        "holding_cost": {
+          "mean": 84888.28301255687,
+          "std": 1611.2426763711464
+        },
+        "ordering_cost": {
+          "mean": 20495.0,
+          "std": 448.0234368869557
+        },
+        "shortage_cost": {
+          "mean": 38311.94646749618,
+          "std": 23550.311314853072
+        },
+        "stockout_rate": {
+          "mean": 0.034,
+          "std": 0.014966629547095767
+        },
+        "fill_rate": {
+          "mean": 0.9919717814126076,
+          "std": 0.004934937127174876
+        },
+        "inventory_turnover": {
+          "mean": 67.48419017242482,
+          "std": 1.256941485585229
+        },
+        "bullwhip_ratio": {
+          "mean": 101.58523791826637,
+          "std": 7.9677091782806855
+        },
+        "avg_inventory": {
+          "mean": 141.4804716875948,
+          "std": 2.6854044606185785
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    }
+  },
+  "Demand Spike": {
+    "MAPPO+GNN": {
+      "policy": "MAPPO+GNN",
+      "metrics": {
+        "total_cost": {
+          "mean": 311200.4121882709,
+          "std": 38336.481895589015
+        },
+        "holding_cost": {
+          "mean": 221877.26979732787,
+          "std": 2806.113513339294
+        },
+        "ordering_cost": {
+          "mean": 22945.0,
+          "std": 710.7918119956082
+        },
+        "shortage_cost": {
+          "mean": 66378.14239094297,
+          "std": 38875.96991966469
+        },
+        "stockout_rate": {
+          "mean": 0.051000000000000004,
+          "std": 0.022113344387495983
+        },
+        "fill_rate": {
+          "mean": 0.9876872430751545,
+          "std": 0.007211264892278072
+        },
+        "inventory_turnover": {
+          "mean": 29.16129749659573,
+          "std": 0.36432659323130034
+        },
+        "bullwhip_ratio": {
+          "mean": 25.472853733596885,
+          "std": 1.343247549775107
+        },
+        "avg_inventory": {
+          "mean": 369.7954496622131,
+          "std": 4.676855855565546
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    },
+    "(s,S) Conservative": {
+      "policy": "(s,S) Conservative",
+      "metrics": {
+        "total_cost": {
+          "mean": 676049.1672381747,
+          "std": 126179.75530419716
+        },
+        "holding_cost": {
+          "mean": 62156.9107558604,
+          "std": 2475.437947228013
+        },
+        "ordering_cost": {
+          "mean": 16115.0,
+          "std": 414.75896614780976
+        },
+        "shortage_cost": {
+          "mean": 597777.2564823142,
+          "std": 126712.71180953574
+        },
+        "stockout_rate": {
+          "mean": 0.303,
+          "std": 0.07156116265125938
+        },
+        "fill_rate": {
+          "mean": 0.8891158175093477,
+          "std": 0.02350446643429566
+        },
+        "inventory_turnover": {
+          "mean": 104.24185862704863,
+          "std": 4.100615551613002
+        },
+        "bullwhip_ratio": {
+          "mean": 20.09050275745315,
+          "std": 0.9958449800770974
+        },
+        "avg_inventory": {
+          "mean": 103.5948512597673,
+          "std": 4.125729912046673
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    },
+    "Base-Stock 400": {
+      "policy": "Base-Stock 400",
+      "metrics": {
+        "total_cost": {
+          "mean": 388672.0601354643,
+          "std": 67555.3144615102
+        },
+        "holding_cost": {
+          "mean": 78942.99513739464,
+          "std": 2727.3838721084476
+        },
+        "ordering_cost": {
+          "mean": 20605.0,
+          "std": 362.2499137335991
+        },
+        "shortage_cost": {
+          "mean": 289124.06499806966,
+          "std": 68460.75396229343
+        },
+        "stockout_rate": {
+          "mean": 0.13399999999999998,
+          "std": 0.03527038417709679
+        },
+        "fill_rate": {
+          "mean": 0.9463691780876016,
+          "std": 0.012699069182514589
+        },
+        "inventory_turnover": {
+          "mean": 82.04462041442612,
+          "std": 2.8033838320228486
+        },
+        "bullwhip_ratio": {
+          "mean": 16.707667240222456,
+          "std": 1.4298520732063644
+        },
+        "avg_inventory": {
+          "mean": 131.57165856232444,
+          "std": 4.545639786847444
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    }
+  },
+  "Supplier Failure": {
+    "MAPPO+GNN": {
+      "policy": "MAPPO+GNN",
+      "metrics": {
+        "total_cost": {
+          "mean": 292121.2396050891,
+          "std": 20766.814794011523
+        },
+        "holding_cost": {
+          "mean": 210406.16768426177,
+          "std": 4194.215447988162
+        },
+        "ordering_cost": {
+          "mean": 23140.0,
+          "std": 594.894948709434
+        },
+        "shortage_cost": {
+          "mean": 58575.071920827395,
+          "std": 19249.452724321563
+        },
+        "stockout_rate": {
+          "mean": 0.049,
+          "std": 0.012206555615733703
+        },
+        "fill_rate": {
+          "mean": 0.9877256698102876,
+          "std": 0.004033697799448588
+        },
+        "inventory_turnover": {
+          "mean": 27.22752970779114,
+          "std": 0.5360386958321213
+        },
+        "bullwhip_ratio": {
+          "mean": 215.72860140901807,
+          "std": 5.7025026232157225
+        },
+        "avg_inventory": {
+          "mean": 350.67694614043637,
+          "std": 6.990359079980215
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    },
+    "(s,S) Conservative": {
+      "policy": "(s,S) Conservative",
+      "metrics": {
+        "total_cost": {
+          "mean": 728299.0146570385,
+          "std": 138876.367795712
+        },
+        "holding_cost": {
+          "mean": 59338.26695883103,
+          "std": 2827.4318118518336
+        },
+        "ordering_cost": {
+          "mean": 16280.0,
+          "std": 550.5451843400322
+        },
+        "shortage_cost": {
+          "mean": 652680.7476982074,
+          "std": 139940.82633221074
+        },
+        "stockout_rate": {
+          "mean": 0.46099999999999997,
+          "std": 0.0875728268357257
+        },
+        "fill_rate": {
+          "mean": 0.8632315976232254,
+          "std": 0.029324418273774605
+        },
+        "inventory_turnover": {
+          "mean": 96.73931106610188,
+          "std": 4.870446772270089
+        },
+        "bullwhip_ratio": {
+          "mean": 159.28224469809624,
+          "std": 4.172349189004093
+        },
+        "avg_inventory": {
+          "mean": 98.8971115980517,
+          "std": 4.712386353086408
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    },
+    "Base-Stock 400": {
+      "policy": "Base-Stock 400",
+      "metrics": {
+        "total_cost": {
+          "mean": 565710.0587441748,
+          "std": 87526.22648192452
+        },
+        "holding_cost": {
+          "mean": 73993.41383545009,
+          "std": 2596.487775978816
+        },
+        "ordering_cost": {
+          "mean": 20250.0,
+          "std": 499.49974974968706
+        },
+        "shortage_cost": {
+          "mean": 471466.6449087245,
+          "std": 88670.98134968805
+        },
+        "stockout_rate": {
+          "mean": 0.31999999999999995,
+          "std": 0.05531726674375732
+        },
+        "fill_rate": {
+          "mean": 0.9012047773348449,
+          "std": 0.01858088889422122
+        },
+        "inventory_turnover": {
+          "mean": 77.48950913375614,
+          "std": 2.7444027263592603
+        },
+        "bullwhip_ratio": {
+          "mean": 156.49232714375168,
+          "std": 5.523899655256631
+        },
+        "avg_inventory": {
+          "mean": 123.32235639241678,
+          "std": 4.327479626631371
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    }
+  },
+  "Combined Crisis": {
+    "MAPPO+GNN": {
+      "policy": "MAPPO+GNN",
+      "metrics": {
+        "total_cost": {
+          "mean": 453498.6540508773,
+          "std": 53909.10217259696
+        },
+        "holding_cost": {
+          "mean": 192508.46291812675,
+          "std": 4718.004026806411
+        },
+        "ordering_cost": {
+          "mean": 23120.0,
+          "std": 846.2269199216012
+        },
+        "shortage_cost": {
+          "mean": 237870.19113275065,
+          "std": 54948.57534843064
+        },
+        "stockout_rate": {
+          "mean": 0.15099999999999997,
+          "std": 0.03618010503025109
+        },
+        "fill_rate": {
+          "mean": 0.9576178655088119,
+          "std": 0.009790373057785556
+        },
+        "inventory_turnover": {
+          "mean": 35.00670886996961,
+          "std": 0.8637836191855295
+        },
+        "bullwhip_ratio": {
+          "mean": 28.94904995768683,
+          "std": 0.7123600964346023
+        },
+        "avg_inventory": {
+          "mean": 320.84743819687793,
+          "std": 7.863340044677404
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    },
+    "(s,S) Conservative": {
+      "policy": "(s,S) Conservative",
+      "metrics": {
+        "total_cost": {
+          "mean": 1278881.2729212018,
+          "std": 141629.2039491888
+        },
+        "holding_cost": {
+          "mean": 56292.305885858834,
+          "std": 3118.933906402712
+        },
+        "ordering_cost": {
+          "mean": 16690.0,
+          "std": 779.6794213008318
+        },
+        "shortage_cost": {
+          "mean": 1205898.967035343,
+          "std": 141326.25879449237
+        },
+        "stockout_rate": {
+          "mean": 0.5770000000000001,
+          "std": 0.08000624975587843
+        },
+        "fill_rate": {
+          "mean": 0.7851409125275653,
+          "std": 0.02518057634225307
+        },
+        "inventory_turnover": {
+          "mean": 120.01155841174071,
+          "std": 6.651430292779319
+        },
+        "bullwhip_ratio": {
+          "mean": 22.04550379220492,
+          "std": 1.4710270684642057
+        },
+        "avg_inventory": {
+          "mean": 93.82050980976472,
+          "std": 5.198223177337845
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    },
+    "Base-Stock 400": {
+      "policy": "Base-Stock 400",
+      "metrics": {
+        "total_cost": {
+          "mean": 1086755.63266304,
+          "std": 92518.97432401348
+        },
+        "holding_cost": {
+          "mean": 68204.38960759544,
+          "std": 2121.6898025383357
+        },
+        "ordering_cost": {
+          "mean": 20015.0,
+          "std": 430.7261310856354
+        },
+        "shortage_cost": {
+          "mean": 998536.2430554446,
+          "std": 92906.0278896255
+        },
+        "stockout_rate": {
+          "mean": 0.484,
+          "std": 0.05624944444170095
+        },
+        "fill_rate": {
+          "mean": 0.8220874286686752,
+          "std": 0.01655338043959719
+        },
+        "inventory_turnover": {
+          "mean": 98.84301085889629,
+          "std": 3.0711862035641406
+        },
+        "bullwhip_ratio": {
+          "mean": 21.216926018321768,
+          "std": 1.4755963817309616
+        },
+        "avg_inventory": {
+          "mean": 113.67398267932572,
+          "std": 3.5361496708972266
+        },
+        "total_periods": {
+          "mean": 100.0,
+          "std": 0.0
+        }
+      }
+    }
+  }
+}
